@@ -1,1 +1,4 @@
-remote_theme: broccolini/swiss
+remote_theme: jekyll/minima
+
+minima:
+  skin: dark
