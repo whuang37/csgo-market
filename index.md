@@ -42,7 +42,9 @@ This get request returns the data in a json format which is cleaned and saved in
 # Data Analysis on Skins and Knives
 All of the data analysis here focuses on data on the 10,281 skins and knives. Stickers and other items are left out as they do not always behave the same way as these items. As we'll find out, there is massive variation even inside just skins and knives.
 
-# Qualities, Types, and Conditions
+Originally the data was taken from August 1, 2020 to September 14, 2020. However, I found that data for September 14, 2020 was incomplete at the time I was scraping data so I cut the range to what it is now.
+
+## Qualities, Types, and Conditions
 
 |Skin Qualities | Skin Types | Skin Conditions |
 |:---:|:---:|:---:|
@@ -71,4 +73,32 @@ With a data spread this large, it begs the question where is the majority of the
 
 The short of it is that the majority of trading and market activity do not occur anywhere near the average price of the market. By calculating the volume weighted average price (VWAP), a trading benchmark normally used to provide insight into trends and values of different securities, we find that the VWAP is only **$2.03**, indicating that a majority of trading actually occurs in the cheaper items. This only furthers the idea that the market price is heavily skewed by the sheer amount of rare and expensive skins.
 
+## Appreciation
 
+Unsurprisingly, its hard to say from a first glance. I began by taking the average percent change between the price of an item on release and its price on September 13, 2020. In this calculation, I found a mean percent change of 154.53% but a median percent change of -43.06%. Once again, the wide spread of the data and large amounts of high price and low volume skins makes it difficult to make any conjectures from basic analyses.
+
+![General Appreciation](graphs/appreleasenow.png)
+
+I then took the average price for every day after launch and calculated its percent change compared to the release day price. This is where things get interesting. Here, we see a clear upwards trends in a skins price as the skin gets older, **indicating some sort of price appreciation as a skin ages**. In the all skins line, theres a series of sawtooth like trends around certain areas. Originally, I thought these patterns were a result of age differences between different items. By separating knives and gloves from normal gun skins, however, it becomes clear that those trends were most likely due to wild fluctuation in the price of knives and gloves. 
+
+Just because the price does appreciate does not mean you'll make money by buying from launch. In normal gun skins, the price of most items almost immediately falls to **nearly 50% below release for most of its lifespan**. Only around the 2000 day mark (nearly 5.5 years!) can you expect to break even. Furthermore, most of the CSGO skins that are over 5 years old have been discontinued or do not drop anymore, potentially increasing their value and causing the steep trend upward past 2000 days from release.
+
+If you do plan on investing on a skin's release date, buy knives and gloves. Both knives and gloves rarely fall below release price over their entire lifetimes. The scarcity and demand for these items mean that atleast you wont lose 50% of your investment in the first year of buying in.
+
+![Price Percent Change from Release over Time](graphs/percentchangeall3.png)
+
+## When to Buy In
+
+*NOTE all analyses done in the When to Buy In section cover only gun skins. Knives and gloves fluctuate far too much to make any reasonable conjecture on them*
+
+CSGO skins tend to sell for astronomical prices upon release due to the demand to get the latest skins. This is apparent in the appreciation graphs which shows that many skins immediately drop 50% of their value almost on launch. This begs the question as to when should you buy in?
+
+If you can't wait and want the newest skins immediately, gun skins tend to drop the most in the first 20 - 30 days post release. Buy in then! If you simply can not bear the wait, giving it 24 hours before buying the newest skin cause mean you save over 20%!
+
+![Price Percent Change from Release in 100 Days](graphs/percentchangeskins100days.png)
+
+However, what if you were investing? By graphing the number of days it takes for a skin to reach its minimum price, we get a mean of 506 ± 491 days and a median of 355 days. Although the massive spread of data makes it difficult to make any concrete assumptions, in general, **the minimum price of an item occurs in the first 3 years of its lifespan**.
+
+![When to Buy in](graphs/whentobuyin.png)
+
+I then calculated the profits if you were to buy in on each day after an item's release and sold your investment on September 13, 2020. Again, we see that buying in between one to three years post release yields the greatest profits, with some investments possibly growing over 4x its value! This data also **indicates that buying into old and discontinued skins can be profitable**. These investments will not yield as much as buying in in the first few years of a release, but grow at a relatively linear rate. 
