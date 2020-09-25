@@ -1,4 +1,4 @@
-##  Analysis on the Counter Strike: Global Offensive Economy
+#  Analysis on the Counter Strike: Global Offensive Economy
 *Written by whuang37 on September 25, 2020* <br />
 *Investigating market trends and potential trading techniques*
 
@@ -6,21 +6,21 @@ This project was driven by an interest and curiosity in the Counter Strike: Glob
 
 By no means am I an expert on data analysis, Python, or the Counter Strike: Global Offensive skin economy. Quite the contrary actually. This project is my first real foray into data analysis with Python. It has also been years since I seriously traded skins and examined the economy. Thus, some of the code or analysis you see may be poorly written. If you have any unanswered questions you want answered, corrections, or critiques on any of my analysis, conjectures, or code please feel free to contact me!
 
-## What is Counter Strike: Global Offensive?
+# What is Counter Strike: Global Offensive?
 
 Counter Strike: Global Offensive (CSGO) is a multiplayer first-person shooter game and the latest entry in the Counter Strike series developed by Valve and Hidden Path Entertainment. CSGO matches feature 10 players split into two teams called Counter-Terrorists and Terrorists played over a series of rounds. Teams attempt to complete objectives (destroying a bombsite/rescuing a hostage) or eliminate the enemy team in order to win the round. Despite the games age and past slumps in popularity, CSGO has seen a recent surge in popularity attributed partly to the increased Chinese interest, the free to play model, and the skin market, the subject of this project.
 
-## The Skin Market
+# The Skin Market
 
 As has become standard in many Valve games, CSGO has a virtual economy where players can exchange real world money for weapon skins and other items. Skins and other items have no effect on the gameplay of CSGO and simply **change the cosmetic design** of weapons, character models, and end-of-round messages. These items are primarily implemented into the game through cases, loot boxes opened with a $2.49 key that contains one of a collection of skins with different rarities, that can be randomly dropped as the player levels up in-game. Players can also earn skins at the end of every match, through battle pass like events called operations, the in-game store, trading with other players, and websites, both first and third party, that specialize in selling different virtual items. 
 
 One of these sites is the [Steam Community Market](https://steamcommunity.com/market/), the source of all data used in this project, is a first party community market where users can list their skins and items for steam credit. The Steam Community Market has become one of the go-to sites to measure a skins price, which can fluctuate and vary from item to item. Scarcity and demand can drive item prices into the thousands of dollars! How does this market react to different changes and major events? How do prices change over time? And, of course, how can we be better CSGO traders and investors? Let's find out!
 
-## About the Data
+# About the Data
 
 For this project, I collected the market history data for 15,917 items with 10,281 of these items being weapon skins, knives, or gloves, 3,600 being stickers, and 2,036 being other items like cases, keys, agents, and music kits. This is a comprehensive list of all items on [csgostash.com](https://csgostash.com), a website listing all CSGO skins, as of September 13, 2020. Some items may be missing due to human error or the item being too rare to be listed on the Community Market or [csgostash.com](https://csgostash.com). This sampling is, however, large enough to paint a relatively accurate picture of the CSGO skin market and make conjectures on market trends and potential trading strategies. All data is taken directly from Steam queries from **August 1, 2020 - September 13, 2020** (more on this later). 
 
-## Collecting Data
+# Collecting Data
 
 I collected the market history from steam in a two step process. I first queried a series of different webpages on [csgostash.com](https://csgostash.com) to get an overarching DataFrame of all possible items and skins. These DataFrames were then saved to .xlsx files (.xlsx used over .csv to preserve the special characters in some skins) for use in querying the steam market. Learn more about this process on the Jupyter notebook used to create these files found [here](https://github.com/whuang37/csgo_market/blob/master/pull_skin_names.ipynb). 
 
@@ -39,14 +39,14 @@ With this list of items and skins, we can query each row for the day-by-day medi
 
 This get request returns the data in a json format which is cleaned and saved in the Jupyter notebook found [here](https://github.com/whuang37/csgo_market/blob/master/get_market_history.ipynb). The data created in this notebook is the subject of the following analyses.
 
-## Data Analysis on Skins and Knives
+# Data Analysis on Skins and Knives
 All of the data analysis here focuses on data on the 10,281 skins and knives. Stickers and other items are left out as they do not always behave the same way as these items. As we'll find out, there is massive variation even inside just skins and knives.
 
-## Qualities, Types, and Conditions
+# Qualities, Types, and Conditions
 
 |Skin Qualities | Skin Types | Skin Conditions |
 |:---:|:---:|:---:|
-| ![Qualities](https://github.com/whuang37/csgo_market/blob/gh-pages/graphs/qualities.png) | ![Skin Types](https://github.com/whuang37/csgo_market/blob/gh-pages/graphs/stsvpl.png) | ![Conditions](https://github.com/whuang37/csgo_market/blob/gh-pages/graphs/conditions.png) |
+| ![Qualities](/graphs/qualities.png) | ![Skin Types](/graphs/stsvpl.png) | ![Conditions](/graphs/conditions.png) |
 
 Skins and knives are broken up into a series of different categories. Each skin has a quality, which dictate an items rarity. Consumer Grade and Industrial Grade skins are dropped normally by playing the game. The rest, apart from Contraband, are solely found through opening crates. Covert quality items correspond to normal covert weapon skins **AND** knives and Extraordinary quality items solely correspond to different gloves. Contraband items, which will be covered in more depth later, are items that have been discontinued due to one reason or another. Many of these items include stolen pieces of artwork which Valve has subsequently pulled from the game. Most of these values make sense in relationship to their rarity other than Covert items. The sheer amount of different knives and rare skins make up nearly a third of all skins in the game. Pretty insane for items that should have a drop rate of 0.25%.
 
@@ -54,7 +54,7 @@ Skins also can come in three main variants, a normal skin with no extras, a Stat
 
 Finally, skins also have a wear which dictates how beat up the artwork/design on the skin is. This wear is often referred to by a float value, a decimal value that dictates how worn the skin is. Floats are split into 5 main categories. Although some skins can only come in certain wears, this evens itself out with each condition commanding approximately a 20% share of the overall market.
 
-### General Market History Information
+## General Market History Information
 
 | Metric | average ± SD | 
 |:--- |:---|
@@ -65,7 +65,7 @@ To begin, I took some basic measurements on the average market price and daily v
 
 These metrics are daunting. The massive spread in the data means that many of the conjectures and analyses made in this project will have to be taken with a grain of salt. It is simply impossible to predict market trends when some items are worth pennies while others are worth thousands of dollars. 
 
-### Location of Market Activity
+## Location of Market Activity
 
 With a data spread this large, it begs the question where is the majority of the market activity taking place? Most CSGO players can not possibly be willing to spend $80+ on what is essentially some pixels.
 
