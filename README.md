@@ -1,4 +1,5 @@
-#Table of Contents
+# Table of Contents
+- [Table of Contents](#table-of-contents)
 - [Analysis on CSGO Skins in the Steam Community Market](#analysis-on-csgo-skins-in-the-steam-community-market)
 - [Installation](#installation)
 - [Usage](#usage)
