@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 title: On the CSGO Market
 ---
 #  Analysis on the Counter Strike: Global Offensive Economy
