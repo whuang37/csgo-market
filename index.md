@@ -1,6 +1,7 @@
 --- 
 layout: single
 author_profile: true
+title: Analysis on the CSGO Economy
 ---
 #  Analysis on the Counter Strike: Global Offensive Economy
 *Written by whuang37 on September 25, 2020* <br />
