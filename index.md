@@ -1,4 +1,7 @@
-
+--- 
+layout: post
+author_profile: true
+---
 #  Analysis on the Counter Strike: Global Offensive Economy
 *Written by whuang37 on September 25, 2020* <br />
 *Investigating market trends and potential trading techniques*
@@ -109,6 +112,7 @@ When it comes to Covert/Extraordinary skins, **there does not seem to be a perfe
 However, what if you were investing? By graphing the number of days it takes for a skin to reach its minimum price, we get a mean of 495 ± 480 days and a median of 359 days. Of all these skins, 50.38% had their minimum price occur in the first year of their lifespan while 37.84% of these skins had their minimum price occur between the first and third year of their lifespan. Keep in mind, 4.59% of these skins had their minimum price occur on launch day (x = 0). Given the fact that skin prices do tend to appreciate to some degree, especially after being on the market for more than 5 years, **it makes the most sense to buy into a skin that has been on the market for less that three years**.
 
 ![Distribution of Minimum](graphs/distributionofminimum.png)
+
 *NOTE A mode of zero means that the mode occurred on release date*
 
 ## When to Sell
@@ -152,6 +156,7 @@ Keep in mind this strategy is untested. **All of this is theoretical and does no
 | Huntsman Case | StatTrak MAC-10 Curse | 6/11/2014 | $1.54 | $1.81 |
 | Huntsman Case | StatTrak USP-S Orion | 6/11/2014 | $34.13 | $55.91 |
 | The Blacksite Collection | Souvenir MP5 Lab Rats | 1/9/2019 | $0.42 | $0.31 |
+
 *Consumer Grade Assault, Alpha, anad Office collections exempt from list*
   
 Some skins in CSGO have been discontinued for one reason or another. The most well-known of these skins is the M4A4 Howl. The original M4A4 Howl skin was a piece of stolen art which subsequently got copyright claimed and caused the skin to be removed from the case. As punishment for this debacle, Valve removed all other skins by the Howl’s creator in the Huntsman Case and replaced them with new skins. The Souvenir MP5 Lab Rats, on the other hand, was a limited time reward for getting 250 XP in Danger Zone on an account with Prime Status. Finally, although not a discontinued skin, the M4A4 Griffin had the same issues as the Howl in which the original artwork was stolen, and copyright claimed. Instead of outright removing the skin from the case, like the Howl, Valve changed the artwork and left it in. I graphed the average price of all these weapons from 30 days before being discontinued to 30 days after being discontinued to investigate short term price changes due to being discontinued. 
@@ -311,8 +316,11 @@ Once again, I must stress that this data can be flawed. The lack of data on more
 For anyone interested, I highly encourage you to scrape your own data and analyze yourself! Although I would love to share my datasets, I do not want to risk breaching any of Steam or Valve’s Terms of Service. Scraping data takes approximately 15 hours (n=3). I will attach my Jupyter Notebooks use for scraping and analysis below. 
 
 [Getting Skin Names](https://github.com/whuang37/csgo_market/blob/master/get_market_history.ipynb)
+
 [Getting Market History](https://github.com/whuang37/csgo_market/blob/master/get_market_history.ipynb)
+
 [Data Analysis](https://github.com/whuang37/csgo_market/blob/master/data_analysis.ipynb)
+
 This project was a massive undertaking that took well over 100 hours over the course of 3 weeks. I still have many unanswered questions, but my limited skillset makes it difficult to go any further without more research. I hope to return to this later as I build my skills in statistics and data analysis. 
 
 ## Notes
