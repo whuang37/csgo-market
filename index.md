@@ -1,3 +1,5 @@
+---
+---
 #  Analysis on the Counter Strike: Global Offensive Economy
 *Written by whuang37 on September 25, 2020* <br />
 *Investigating market trends and potential trading techniques*
