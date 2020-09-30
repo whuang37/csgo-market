@@ -33,4 +33,8 @@ subtitle: "An indepth analysis on the CSGO skin economy through data analysis"
 
 comments:
   provider: "utterances"
-  
+  utterances:
+    theme: "github-light"
+    issue_term: "pathname"
+
+repository: "whuang37/csgo_market"
