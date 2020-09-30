@@ -21,4 +21,4 @@ All jupyter notebooks in this repository are setup so that you can run all cells
 
 # Contributing
 
-Any contributions are free to make pull requests. I will review and merge accordingly. - [Analysis on CSGO Skins in the Steam Community Market](#analysis-on-csgo-skins-in-the-steam-community-market)
+Any contributions are free to make pull requests. I will review and merge accordingly.
