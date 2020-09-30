@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: single
 author_profile: true
 ---
 #  Analysis on the Counter Strike: Global Offensive Economy
