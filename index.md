@@ -1,5 +1,5 @@
 ---
-layout: default.html
+layout: default
 title: On the CSGO Market
 ---
 #  Analysis on the Counter Strike: Global Offensive Economy
@@ -169,7 +169,7 @@ In order to best represent the entire CSGO skin economy, I created a sort of ind
 
 ![Index](graphs/skinindex.png)
 
-After creating this graph, I generated the Bollinger Bands to see the volatility of the index. Bollinger bands are two lines that indicate the volatility of a stock or security. The further away the two lines are from each other, the more volatile the stock is. This is calculated by adding and subtracting 2 * standard deviation to the moving average. Although I am far from an experienced technical analyst, these bands seem to work in similar ways compared to the real-life stock market. For instance, squeezes, when the distance between two bands is lowest in each area, indicate that a market will be bullish or bearish soon. This is seen in early-2015 and mid-2020, where price spikes were preceded by Bollinger Band squeezes. One would most likely have to calculate the Relative Strength Index (RSI) and use other technical analysis tools to fully use this information. 
+After creating this graph, I generated the Bollinger Bands to see the volatility of the index. Bollinger bands are two lines that indicate the volatility of a stock or security. The further away the two lines are from each other, the more volatile the stock is. This is calculated by adding and subtracting 2 * standard deviation to the moving average. Although I am far from an experienced technical analyst, **these bands seem to work in similar ways compared to the real-life stock market**. For instance, squeezes, when the distance between two bands is lowest in each area, indicate that a market will be bullish or bearish soon. This is seen in early-2015 and mid-2020, where price spikes were preceded by Bollinger Band squeezes. One would most likely have to calculate the Relative Strength Index (RSI) and use other technical analysis tools to fully use this information. 
 
 These graphs also closely follow key events in CSGO trading, gambling and the COVID-19 pandemic. From 2015 to 2016, CSGO skins were extremely popular for one sole reason, gambling. Hundreds of different gambling sites popped up nearly overnight. Due to the legal gray area these sites stood in, as technically no real money was being used, these sites were left relatively untouched until mid-2016. On July 4th, 2016, popular youtubers Syndicate and TmartN were exposed for rigging their own gambling site, csgolotto.com. Soon after, Valve shut down all gambling sites. On one day, July 11, 2016, the index of CSGO skins dropped 21.74% from $3875.51 to $3032.89. The CSGO economy has never truly recovered from this moment. The market briefly recovered in early-2020, caused by an influx of players due to the COVID-19 pandemic, but this only lasted a few months before the market stabilized.
 
@@ -313,6 +313,9 @@ Once again, I must stress that this data can be flawed. The lack of data on more
 
 For anyone interested, I highly encourage you to scrape your own data and analyze yourself! Although I would love to share my datasets, I do not want to risk breaching any of Steam or Valve’s Terms of Service. Scraping data takes approximately 15 hours (n=3). I will attach my Jupyter Notebooks use for scraping and analysis below. 
 
+[Getting Skin Names](https://github.com/whuang37/csgo_market/blob/master/get_market_history.ipynb)
+[Getting Market History](https://github.com/whuang37/csgo_market/blob/master/get_market_history.ipynb)
+[Data Analysis](https://github.com/whuang37/csgo_market/blob/master/data_analysis.ipynb)
 This project was a massive undertaking that took well over 100 hours over the course of 3 weeks. I still have many unanswered questions, but my limited skillset makes it difficult to go any further without more research. I hope to return to this later as I build my skills in statistics and data analysis. 
 
 ## Notes
