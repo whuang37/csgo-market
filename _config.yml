@@ -1,9 +1,9 @@
 remote_theme: jekyll/minima
 
-minima:
-  social_links:
-    github: https://github.com/whuang37
-    linkedin: https://www.linkedin.com/in/whuang37/
+# minima:
+#   social_links:
+#     github: https://github.com/whuang37
+#     linkedin: https://www.linkedin.com/in/whuang37/
 
 # author: 
 #   name: William Huang
