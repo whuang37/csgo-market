@@ -1,6 +1,4 @@
-remote_theme: jekyll/minima
+plugins:
+  - jekyll-include-cache
 
-minima:
-  social_links:
-    github: whuang37
-    linkedin: whuang37
+remote_theme: "mmistakes/minimal-mistakes@4.20.2"
