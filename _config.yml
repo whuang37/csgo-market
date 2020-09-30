@@ -10,10 +10,23 @@ defaults:
     type: posts
   values:
     layout: single
+    author_profile: true
     read_time: true
     comments: true
     share: true
     related: true
+
+author:
+  name: "William Huang"
+  avatar: "/images/avatar.png"
+  bio: "I am an undergraduate student at UCLA with an interest in all things data."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/whuang37"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/whuang37/"
 
 title: The CSGO Skin Economy
 subtitle: "An indepth analysis on the CSGO Skin Economy through data analysis"
