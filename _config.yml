@@ -1,2 +1,6 @@
 remote_theme: jekyll/minima
 
+minima:
+  social_links:
+    github: whuang37
+    linkedin: whuang37
