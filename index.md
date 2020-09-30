@@ -1,6 +1,6 @@
 ---
 title: The CSGO Economy
-layout: template
+layout: post.html
 filename: index.md
 ---
 
