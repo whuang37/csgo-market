@@ -324,4 +324,3 @@ Certain skins have naming discrepancies that should be addressed. They are liste
 | Michael Syfers FBI Snipper                           | The hash name is missing a space before the bar between Syfers and FBI                                                                                                               |
 | Scarlxrd: King, Scar                                 | The Artist and Kit is separated by a colon instead of a comma                                                                                                                        |
 
-*Valve please fix*
