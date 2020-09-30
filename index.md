@@ -334,6 +334,6 @@ Certain skins have naming discrepancies that should be addressed. They are liste
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Holo/Foil Stickers from Pinup, Slid3, and Team Role  | There are two versions of these stickers, one with a space before "(" and one without one. These are separate market listings so buy whichever is cheaper. They are the same ingame. |
 | Ground Rebel Elite Crew                              | The hash name is missing a space before the bar between Rebel and Elite                                                                                                              |
-| Michael Syfers FBI Snipper                           | The hash name is missing a space before the bar between Syfers and FBI                                                                                                               |
+| Michael Syfers FBI Sniper                           | The hash name is missing a space before the bar between Syfers and FBI                                                                                                               |
 | Scarlxrd: King, Scar                                 | The Artist and Kit is separated by a colon instead of a comma                                                                                                                        |
 

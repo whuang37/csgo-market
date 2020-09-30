@@ -19,7 +19,7 @@ defaults:
 author:
   name: "William Huang"
   avatar: "/images/avatar.png"
-  bio: "I am an undergraduate student at UCLA with an interest in all things data."
+  bio: "An undergraduate student at UCLA with an interest in all things data."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
