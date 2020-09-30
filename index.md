@@ -1,7 +1,5 @@
 ---
 title: The CSGO Economy
-layout: post.html
-filename: index.md
 ---
 
 #  Analysis on the Counter Strike: Global Offensive Economy
