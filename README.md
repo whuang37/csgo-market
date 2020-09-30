@@ -6,7 +6,7 @@
 - [Contributing](#contributing)
 # Analysis on CSGO Skins in the Steam Community Market
 
-A series of Jupyter Notebooks and python scripts used to query data from the Steam community market and analyze the collected data.
+A series of Jupyter Notebooks and python scripts used to query data from the Steam community market and analyze the collected data. Read more [here](https://whuang37.github.io/csgo_market/)
 
 # Installation
 
