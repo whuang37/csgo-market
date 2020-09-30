@@ -6,7 +6,7 @@ classes: wide
 read_time: true
 comments: true
 ---
-*Written by whuang37 on September 25, 2020* <br />
+*Written by whuang37 on September 29, 2020* <br />
 *Investigating market trends and potential trading techniques*
 
 This project was driven by an interest and curiosity in the Counter Strike: Global Offensive skin market that began nearly 6 years ago when I began trading skins. I spent hours upon hours tracking prices, browsing trading forums, trading, and, as much as I hate to say it now, gambling to learn more about the market and build the skin inventory of my dreams. As I learned more of the market, new questions kept arising. Why were certain skins worth so much? How did the M4A4 Griffin's price change in the long term after the artwork fiasco? What drives change in the economy? Eventually, I lost interest in the game and the economy, but I never forgot those burning questions I had. Now, 6 years later, I want to finally answer them. 
