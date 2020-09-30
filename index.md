@@ -3,6 +3,7 @@ layout: single
 author_profile: true
 title: Analysis on the CSGO Economy
 classes: wide
+read_time: true
 ---
 *Written by whuang37 on September 25, 2020* <br />
 *Investigating market trends and potential trading techniques*

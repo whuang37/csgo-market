@@ -15,4 +15,5 @@ defaults:
     share: true
     related: true
 
-name: On the CSGO Skin Economy
+title: The CSGO Skin Economy
+subtitle: "An indepth analysis on the CSGO Skin Economy through data analysis"
